@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-primary: #2b4c8c;
+  --color-primary-dark: #1e3a6e;
+  --color-accent: #2b4c8c;
+  --color-accent-dark: #1e3a6e;
+  --color-secondary: #4a6bb5;
+  --color-dark: #0f172a;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  color: #0f172a;
+}
+
+/* Fix for mobile viewport height */
+.min-h-screen-real {
+  min-height: 100vh;
+  min-height: 100dvh;
+}

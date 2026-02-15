@@ -1,0 +1,78 @@
+{
+  "site_info": {
+    "title": "Kifel Service",
+    "url": "https://kifel-service.com",
+    "language": "de",
+    "description": "Kifel Service ist Ihr Partner für professionelle Reinigungsdienstleistungen und Sicherheitsdienst in Kaarst und Umgebung."
+  },
+  "categories": [
+    {
+      "id": 5,
+      "name": "Aktuelles",
+      "slug": "aktuelles"
+    },
+    {
+      "id": 8,
+      "name": "Angebote",
+      "slug": "angebote"
+    },
+    {
+      "id": 6,
+      "name": "Reinigungsservice",
+      "slug": "reinigungsservice"
+    },
+    {
+      "id": 7,
+      "name": "Sicherheitsservice",
+      "slug": "sicherheitsservice"
+    }
+  ],
+  "tags": [
+    {
+      "id": 9,
+      "name": "aktuelles",
+      "slug": "aktuelles"
+    },
+    {
+      "id": 3,
+      "name": "düsseldorf",
+      "slug": "duesseldorf"
+    },
+    {
+      "id": 4,
+      "name": "kaarst",
+      "slug": "kaarst"
+    },
+    {
+      "id": 2,
+      "name": "kifel service",
+      "slug": "kifel-service"
+    },
+    {
+      "id": 11,
+      "name": "Neue Website",
+      "slug": "neue-website"
+    },
+    {
+      "id": 10,
+      "name": "Reinigungsdienstleistungen",
+      "slug": "reinigungsdienstleistungen"
+    }
+  ],
+  "contact": {
+    "company": "Kifel Service e.K.",
+    "address": "Justus-Liebig-Straße 3, 41564 Kaarst",
+    "phone": "+49 2131 29 45 497",
+    "mobile": "+49 176 14 679 638",
+    "email": "info@kifel-service.de",
+    "website": "www.kifel-service.de",
+    "owner": "Alexander Kifel",
+    "registergericht": "Amtsgericht Neuss",
+    "registernummer": "HRA 8115",
+    "steuernummer": "122 5310 5752"
+  },
+  "social_media": {
+    "facebook": "https://www.facebook.com/KifelService",
+    "instagram": "https://www.instagram.com/kifel.service/"
+  }
+}
