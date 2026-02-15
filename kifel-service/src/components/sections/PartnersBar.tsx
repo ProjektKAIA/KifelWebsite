@@ -4,15 +4,14 @@ import SectionHeading from '@/components/ui/SectionHeading';
 const referenzen = [
   { name: 'Allianz', logo: '/images/referenzen/allianz.jpg', url: 'https://www.allianz.de/' },
   { name: 'Baufinovo', logo: '/images/referenzen/baufinovo.jpg', url: 'https://www.baufinovo.de/' },
-  { name: 'BNI', logo: '/images/referenzen/bni.jpg', url: 'https://bni.de/' },
   { name: 'Feller Fenster', logo: '/images/referenzen/feller.jpg', url: 'https://www.feller-fenster.de/' },
   { name: 'safe TEC Consulting', logo: '/images/referenzen/safe-tec.jpg', url: 'https://www.safe-tec-consulting.de/' },
   { name: 'Lebenshilfe Rhein-Kreis Neuss', logo: '/images/referenzen/lebenshilfe.jpg', url: 'https://ggmbh.lebenshilfe-rhein-kreis-neuss.de/' },
 ];
 
 const partners = [
-  { name: 'National Inkasso', logo: '/images/partners/national-inkasso.png' },
-  { name: 'Endress Brandschutz', logo: '/images/partners/endress.png' },
+  { name: 'National Inkasso', logo: '/images/partners/national-inkasso-hq.png', url: 'https://www.national-inkasso.de/' },
+  { name: 'Endress Brandschutz', logo: '/images/partners/endress.png', url: 'https://www.endress-brandschutz.de/' },
 ];
 
 export default function PartnersBar() {
@@ -34,15 +33,18 @@ export default function PartnersBar() {
           ))}
         </div>
 
-        <SectionHeading title="Unsere Partner" subtitle="Starke Partnerschaften für beste Ergebnisse" />
+        <SectionHeading title="Kooperationspartner" subtitle="Starke Partnerschaften für höchste Qualität" />
         <div className="flex flex-wrap items-center justify-center gap-8">
           {partners.map((partner) => (
-            <div
+            <a
               key={partner.name}
-              className="flex items-center justify-center bg-white border border-gray-200 rounded-lg p-8 h-32 w-72"
+              href={partner.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center bg-white border border-gray-200 hover:border-[#2b4c8c]/30 rounded-lg p-8 h-32 w-72 transition-colors duration-200"
             >
               <Image src={partner.logo} alt={partner.name} width={240} height={100} className="object-contain max-h-20 w-auto" />
-            </div>
+            </a>
           ))}
         </div>
       </div>

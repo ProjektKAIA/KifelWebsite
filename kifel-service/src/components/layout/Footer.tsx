@@ -65,6 +65,21 @@ export default function Footer() {
           </div>
         </div>
       </div>
+      {/* Kooperationspartner */}
+      <div className="border-t border-slate-800">
+        <div className="max-w-7xl mx-auto px-4 py-8">
+          <p className="text-xs text-gray-500 uppercase tracking-wider mb-4 text-center">Kooperationspartner</p>
+          <div className="flex flex-wrap items-center justify-center gap-8">
+            <a href="https://www.national-inkasso.de/" target="_blank" rel="noopener noreferrer" className="opacity-60 hover:opacity-100 transition-opacity">
+              <Image src="/images/partners/national-inkasso-hq.png" alt="National Inkasso" width={160} height={60} className="object-contain h-10 w-auto brightness-0 invert" />
+            </a>
+            <a href="https://www.endress-brandschutz.de/" target="_blank" rel="noopener noreferrer" className="opacity-60 hover:opacity-100 transition-opacity">
+              <Image src="/images/partners/endress.png" alt="Endress Brandschutz" width={160} height={60} className="object-contain h-10 w-auto brightness-0 invert" />
+            </a>
+          </div>
+        </div>
+      </div>
+
       <div className="border-t border-slate-800">
         <div className="max-w-7xl mx-auto px-4 py-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-500">
           <p>&copy; {new Date().getFullYear()} {company.name}. Alle Rechte vorbehalten.</p>
