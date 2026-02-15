@@ -22,7 +22,7 @@ export default function Button({
   const base = 'inline-flex items-center justify-center font-bold rounded-lg transition-all duration-300 transform hover:scale-105';
   const variants = {
     primary: 'bg-[#2b4c8c] hover:bg-[#1e3a6e] text-white shadow-lg hover:shadow-[#2b4c8c]/25',
-    secondary: 'bg-[#1e3a6e] hover:bg-[#162d57] text-white shadow-lg',
+    secondary: 'bg-white hover:bg-gray-100 text-[#2b4c8c] shadow-lg',
     outline: 'border-2 border-white text-white hover:bg-white hover:text-slate-900',
   };
   const sizes = {

@@ -4,6 +4,7 @@ import PartnersBar from '@/components/sections/PartnersBar';
 import AktuellesPreview from '@/components/sections/AktuellesPreview';
 import Testimonials from '@/components/sections/Testimonials';
 import CtaBanner from '@/components/sections/CtaBanner';
+import AppBanner from '@/components/sections/AppBanner';
 
 export default function HomePage() {
   return (
@@ -17,6 +18,7 @@ export default function HomePage() {
       <ServicesGrid />
       <PartnersBar />
       <AktuellesPreview />
+      <AppBanner />
       <Testimonials />
       <CtaBanner />
     </>
