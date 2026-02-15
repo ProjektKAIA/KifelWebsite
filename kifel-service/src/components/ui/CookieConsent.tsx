@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Link from 'next/link';
 
 interface CookiePreferences {
@@ -42,17 +42,15 @@ const cookieInfo = [
   },
 ];
 
+function getInitialVisibility() {
+  if (typeof window === 'undefined') return false;
+  return !localStorage.getItem('cookie-consent');
+}
+
 export default function CookieConsent() {
-  const [visible, setVisible] = useState(false);
+  const [visible, setVisible] = useState(getInitialVisibility);
   const [showDetails, setShowDetails] = useState(false);
   const [preferences, setPreferences] = useState<CookiePreferences>(defaultPreferences);
-
-  useEffect(() => {
-    const consent = localStorage.getItem('cookie-consent');
-    if (!consent) {
-      setVisible(true);
-    }
-  }, []);
 
   const saveAndClose = (prefs: CookiePreferences) => {
     localStorage.setItem('cookie-consent', JSON.stringify(prefs));
